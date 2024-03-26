@@ -2,6 +2,9 @@
 
 A little game inspired by the movie Captain America: Civil War, built using HTML, CSS, and JavaScript. It's a fighting game like Tekken, featuring two characters: Iron Man (controlled by a bot) and Captain America (controlled by the player).
 
+![Alt text](testingss.png)
+
+
 ## Controls
 
 Player One (Captain America):
@@ -15,5 +18,8 @@ Player One (Captain America):
 ## Play Online
 
 You can play the game online [here](https://sithumsankajith.github.io/civil-war-web-game/).
+
+![Alt text](playingss.png)
+
 
 Enjoy the game!
