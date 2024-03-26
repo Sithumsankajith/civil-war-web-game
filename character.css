@@ -1,0 +1,502 @@
+/* characters body */
+.cap-america,
+.ironman {
+    height: 100px;
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .4s;
+    /* border: 1px solid black; */
+    overflow: visible;
+}
+
+.cap-america {
+    left: 5px;
+}
+
+.ironman {
+    left: calc(100% - 100px);
+}
+
+.characters-hit {
+    filter: invert(1) grayscale(1);
+}
+
+/* characters head */
+.iron-head {
+    width: 17px;
+    background: red;
+    left: 38px;
+}
+
+.cap-head {
+    width: 18px;
+    background: linear-gradient(blue 70%, #f3c1b0 30%);
+    left: 22px;
+}
+
+.cap-head,
+.iron-head {
+    height: 25px;
+    border-radius: 8px;
+    position: absolute;
+    top: 0px;
+}
+
+.cap-head::before,
+.cap-head::after,
+.iron-head::before {
+    color: white;
+    font-family: monospace;
+    position: absolute;
+}
+
+.cap-head::before {
+    content: "A";
+    font-size: 5px;
+    left: 60%;
+    bottom: 65%;
+}
+
+.cap-head::after {
+    content: "77";
+    font-size: 3px;
+    left: 10%;
+    bottom: 70%;
+    transform: rotate(-80deg);
+}
+
+.iron-head::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background: red;
+    left: 24%;
+    bottom: 69%;
+    z-index: 1;
+}
+
+
+/* character face */
+.iron-face {
+    height: 20px;
+    width: 17px;
+    background: #ffff00e0;
+    border-radius: 10px;
+    position: absolute;
+    left: -10%;
+    top: 16%;
+}
+
+.iron-face::before,
+.iron-face::after {
+    content: "";
+    height: 10px;
+    width: 7px;
+    background: red;
+    color: white;
+    position: absolute;
+    bottom: 0%;
+}
+
+.iron-face::before {
+    left: -23%;
+    transform: rotate(-5deg);
+}
+
+.iron-face::after {
+    left: 81%;
+    transform: rotate(14deg);
+}
+
+/* character eyes */
+.cap-eyes,
+.iron-eyes {
+    position: absolute;
+}
+
+.cap-eyes {
+    height: 5px;
+    width: 15px;
+    background: linear-gradient(to right, #f3c1b0 0, #f3c1b0 43%, blue 43%, blue 66%, #f3c1b0 66%, #f3c1b0 100%);
+    left: 25%;
+    top: 40%;
+}
+
+.iron-eyes {
+    height: 1px;
+    width: 100%;
+    bottom: 73%;
+    overflow: visible;
+}
+
+.cap-eyes::after,
+.cap-eyes::before {
+    width: 100%;
+    color: #000096;
+    font-family: monospace;
+    font-size: 9px;
+    position: absolute;
+    left: 10%;
+    letter-spacing: 3px;
+}
+
+.cap-eyes::after {
+    content: "__";
+    bottom: 60%;
+}
+
+.cap-eyes::before {
+    content: "..";
+    bottom: -20%;
+}
+
+.iron-eyes::after {
+    content: "--";
+    height: 0px;
+    font-size: 18px;
+    letter-spacing: -3px;
+    color: skyblue;
+    position: absolute;
+    bottom: 11px;
+    left: 0px;
+}
+
+
+/* mouth */
+.cap-mouth,
+.iron-mouth {
+    position: absolute;
+}
+
+.cap-mouth {
+    bottom: 10%;
+    left: 40%;
+    border-radius: 20px;
+}
+
+.iron-mouth {
+    bottom: 17%;
+    left: 14%;
+}
+
+/* body */
+.cap-body,
+.iron-body {
+    width: 20px;
+    position: absolute;
+    top: 25px;
+    border-radius: 5px;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.cap-body {
+    height: 30px;
+    left: 20px;
+    background: linear-gradient(#580ace 60%, white 40%);
+    border-bottom: 6px solid #000096;
+}
+
+.iron-body {
+    height: 37px;
+    left: 38px;
+    background: red;
+}
+
+.cap-body span,
+.iron-body span {
+    color: red;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.iron-body span {
+    font-size: 7px;
+    transform: translate(-5px, -10px);
+}
+
+
+/* characters legs */
+.cap-legs,
+.iron-legs {
+    width: 8px;
+    border-radius: 2px;
+    position: absolute;
+    top: 60px;
+}
+
+.cap-legs {
+    height: 40px;
+    background: linear-gradient(#000096 70%, brown 30%);
+}
+
+.iron-legs {
+    height: 35px;
+    background: linear-gradient(#ffff00e0 50%, red 50%);
+    box-shadow: 0px 2px orange;
+}
+
+.c-leg-R,
+.i-leg-L {
+    z-index: 3;
+}
+
+.c-leg-L,
+.i-leg-R {
+    z-index: 1;
+}
+
+.c-leg-R {
+    left: 21px;
+}
+
+.c-leg-L {
+    left: 31px;
+}
+
+.i-leg-R {
+    left: 41px;
+    transform: rotate(-5deg);
+}
+
+.i-leg-L {
+    left: 46px;
+    transform: rotate(5deg);
+}
+
+
+/* characters arms */
+.cap-arms,
+.iron-arms {
+    position: absolute;
+}
+
+.cap-arms {
+    height: 12px;
+    width: 12px;
+    border-bottom: 8px solid #000096;
+    border-right: 8px solid brown;
+}
+
+.iron-arms {
+    height: 40px;
+    width: 8px;
+    background: linear-gradient(#ffff00e0 50%, red 50%);
+    border-radius: 8px;
+}
+
+.c-arm-R,
+.c-arm-L {
+    top: 18px;
+}
+
+.i-arm-R,
+.i-arm-L {
+    top: 30px;
+}
+
+.c-arm-R,
+.i-arm-L {
+    z-index: 3;
+}
+
+.c-arm-L,
+.i-arm-R {
+    z-index: 1;
+}
+
+.c-arm-R {
+    left: 20px;
+}
+
+.c-arm-L {
+    left: 35px;
+}
+
+.i-arm-R {
+    left: 35px;
+    transform: rotate(15deg);
+}
+
+.i-arm-L {
+    left: 55px;
+    transform: rotate(-15deg);
+}
+
+.i-arm-R,
+.i-arm-L,
+.i-leg-R,
+.i-leg-L {
+    box-shadow: 0px 5px 2px orange;
+}
+
+/* Character animes */
+/* move */
+.c-leg-R-move {
+    animation: c-leg-R-anime 0.4s linear 1;
+}
+
+.c-leg-L-move {
+    animation: c-leg-L-anime 0.4s linear 1;
+}
+
+.c-arm-R-move {
+    top: 19px;
+    transform: rotate(10deg);
+}
+
+/* jump */
+.c-leg-R-jump {
+    left: 18px;
+    top: 60px;
+    transform: rotate(30deg);
+}
+
+.c-leg-L-jump {
+    left: 28px;
+    top: 60px;
+    transform: rotate(30deg);
+}
+
+.cap-america-jump {
+    animation: cap-jump .7s ease 1;
+}
+
+
+.ironman-jump {
+    animation: iron-jump 1s ease 1;
+}
+
+
+/* punch and shoot */
+.c-arm-L-punch,
+.c-arm-L-shoot,
+.c-arm-R-shoot {
+    background: linear-gradient(to right, #000096 0%, #000096 70%, brown 70%, brown 100%);
+    height: 8px;
+    border-bottom: none;
+    border-right: none;
+}
+
+/* punch */
+.c-arm-L-punch {
+    width: 35px;
+    top: 32px;
+}
+
+.i-arm-L-punch {
+    left: 34px;
+    transform: rotate(87deg);
+    top: 23px;
+}
+
+.i-arm-R-punch {
+    left: 33px;
+    transform: rotate(86deg);
+}
+
+
+.cap-punch,
+.ironman-punch {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.cap-punch {
+    border-right: 3px solid white;
+    box-shadow: 5px 0px 5px white;
+}
+
+.ironman-punch {
+    border-left: 3px solid orange;
+    box-shadow: -10px 0px 20px orange;
+}
+
+/* shoot */
+.c-arm-L-shoot {
+    width: 30px;
+    top: 48px;
+    left: 15px;
+    transform: rotate(120deg);
+    z-index: 3;
+}
+
+.c-arm-R-shoot {
+    width: 30px;
+    left: 0px;
+    top: 40px;
+    transform: rotate(150deg);
+    z-index: 1;
+}
+
+.cap-shoot {
+    transform: rotate(-5deg);
+}
+
+.i-arm-L-shoot,
+.i-arm-R-shoot {
+    height: 12px;
+    width: 12px;
+    border-top: 8px solid #ffff00e0;
+    border-right: 8px solid red;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.c-projectiles {
+    position: absolute;
+    /* border: 1px solid black; */
+    height: 40px;
+    width: 50px;
+    z-index: 100;
+}
+
+.shield {
+    width: 100px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(white 20%, #2d2db7, 40%, #ff0000 60%, #2d2db7 20%);
+    transform: rotate(10deg);
+}
+
+.beam {
+    height: 5px;
+    width: 60px;
+    background: linear-gradient(#00eaff 0%, #00eaff 40%, #00ff99 40%, #00ff99 50%, #00eaff 60%, #00eaff 100%);
+    border-right: 10px solid #00ff99;
+    box-shadow: -5px 0px 10px #00ff99;
+}
+
+/* health bar */
+.character-health,
+.weapon-bar {
+    height: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.character-health {
+    top: -20px;
+}
+
+/* weapon bar */
+.weapon-bar {
+    width: 50%;
+    top: -18px;
+}
+
+#cap-weapon-bar {
+    transform: translateX(-20px);
+}
+
+#ironman-weapon-bar {
+    transform: translateX(20px);
+}

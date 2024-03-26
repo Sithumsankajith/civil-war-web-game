@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>civil war</title>
+    <link rel="icon" href="assets/icons8-captain-america-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="civilwar.css">
+    <link rel="stylesheet" href="character.css">
+    <link rel="stylesheet" href="captain.css">
+</head>
+
+<body>
+    <div class="container flex-center">
+        <!-- GAME AREA -->
+        <div class="game-area flex-center">
+
+            <button id="playBtn" class="play" onclick="startTheGame()">PLAY</button>
+
+            <!-- captain -->
+            <div id="cap-america" class="cap-america">
+                <progress min="0" max="100" value="100" id="cap-health" class="character-health"></progress>
+                <progress min="0" max="100" value="0" id="cap-weapon-bar" class="weapon-bar"></progress>
+                <div class="cap-head">
+                    <div class="cap-eyes"></div>
+                    <div class="cap-mouth">_</div>
+                </div>
+
+                <div class="cap-body flex-center"><span>🌟</span><span>|||</span></div>
+
+                <div class="cap-legs c-leg-R"></div>
+                <div class="cap-legs c-leg-L"></div>
+
+                <div class="cap-arms c-arm-R"></div>
+                <div class="cap-arms c-arm-L"></div>
+            </div>
+
+
+            <!-- Iron man -->
+            <div id="ironman" class="ironman">
+                <progress min="0" max="100" value="100" id="ironman-health" class="character-health"></progress>
+                <progress min="0" max="100" value="0" id="ironman-weapon-bar" class="weapon-bar"></progress>
+                <div class="iron-head">
+                    <div class="iron-face">
+                        <div class="iron-eyes"></div>
+                    </div>
+                    <div class="iron-mouth">_</div>
+                </div>
+
+                <div class="iron-body flex-center"><span>⚪</span></div>
+
+                <div class="iron-legs i-leg-R"></div>
+                <div class="iron-legs i-leg-L"></div>
+
+                <div class="iron-arms i-arm-R"></div>
+                <div class="iron-arms i-arm-L"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
